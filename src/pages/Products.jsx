@@ -43,7 +43,7 @@ const Products = () => {
   return (
     <div>
       <Navbar />
-      <div className='flex flex-col-3 max-w-[1240px]   mt-2'>
+      <div className='lg:flex flex-col-3 max-w-[1240px]   mt-2'>
         <div className='w-64 mt-8 pl-6 '>
           <ul className='list-none'>
             <div className='mb-6'>
@@ -60,7 +60,7 @@ const Products = () => {
          </ul>   
           
         </div>
-        <div className='w-full grid lg:grid-cols-3 gap-2 mt-8 pl-6 md:grid-col-3'>        
+        <div className='w-full h-screen overflow-y-visible grid lg:grid-cols-3 gap-2 mt-8 pl-6 md:grid-col-3'>        
           {products.map(item=>{
             return(<div className='w-80 h-96 pl-2 pt-2 rounded-md bg-[#ffdd59] '>
             <h1 className='text-white truncate text-xl font-bold'>{item.title}</h1>

@@ -36,7 +36,7 @@ const Cart = () => {
               {products.length ? (
                 products.map((item) => {
                   return (
-                    <div className="border flex flex-row w-full  justify-between ">
+                    <div className="border md:flex md:flex-row w-full  justify-between ">
                       <div className="w-40">
                         <h1 className="text-clip">{item.title}</h1>
                         <img src={item.image} className=" w-20 h-20  " />
@@ -77,12 +77,12 @@ const Cart = () => {
           </div>
         </div>
       </div>
-      <div className="h-20 w-full -mt-20  bg-orange-500">
-        <div className="h-3/4 w-3/4 m-auto bg-white grid grid-cols-3 gap-4">
+      <div className="md:h-20 w-full md:-mt-20  bg-orange-500">
+        <div className="md:h-3/4 md:w-3/4 m-auto bg-white md:grid md:grid-cols-3 gap-4 ">
           <h1 className="text-xl mt-2">Total:{total}$</h1>
-          <button className='w-40 h-10 mt-2 rounded-md bg-[#ff3f34] font-bold text-white text-xl' onClick={(e) => dispatch(deleteCart())}>Clear</button>
+          <button className='md:w-40  h-10 mt-2 rounded-md bg-[#ff3f34] font-bold text-white md:text-xl' onClick={(e) => dispatch(deleteCart())}>Clear</button>
           {/* TODO: Write function when endpoint is ready for button on click */}
-          <button className='w-40 h-10 mt-2 ml-16 rounded-md bg-[#0be881] font-bold text-white text-xl'>Procced Order</button> 
+          <button className='md:w-40   h-10 mt-2 ml-16 rounded-md bg-[#0be881] font-bold text-white md:text-xl'>Procced Order</button> 
             
         </div>
 
